@@ -28,7 +28,10 @@ app.get('/123',function(req,res){
     res.status(200),
     res.json(questions)
 });
- 
+app.get('/',function(req,res){
+    res.status(200),
+    res.json(questions)
+});
 //配置服务端口
  
 var server = app.listen(3000, function () {
